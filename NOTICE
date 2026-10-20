@@ -4,17 +4,6 @@ ul_unas_rs
 Copyright (c) 2026 Tanix
 Licensed under the MIT License. See LICENSE for the full license text.
 
-Upstream code
--------------
-
-The native Rust network and tensor descriptions were extracted from VoiceBox:
-  Commit: d80859feb47a01eb40883c7020e840a6a20a9c1c
-  src/apo/dsp/ul_unas/{network,weights,mod,spectral}.rs
-  src/apo/dsp/simd.rs
-
-Copyright (c) 2026 Tanix
-Licensed under the MIT License reproduced below.
-
 Model
 -----
 
@@ -25,9 +14,9 @@ The UL-UNAS architecture and trained DNS3 parameters originate from:
 Copyright (c) 2026 Xiaobin Rong
 Licensed under the MIT License reproduced below.
 
-The bundled weights/dns3.f32 contains the unchanged FP32 tensors copied from
-VoiceBox's assets/ul_unas/dns3.f32, derived from the upstream checkpoint
-checkpoints/model_trained_on_dns3.tar (epoch 191).
+The bundled weights/dns3.f32 contains the unchanged FP32 tensors extracted
+from checkpoints/model_trained_on_dns3.tar (epoch 191)
+in the ul-unas repository identified above.
 These upstream copyright notices and license terms apply to the respective
 components.
 
