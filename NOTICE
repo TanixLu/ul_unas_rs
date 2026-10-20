@@ -1,0 +1,53 @@
+ul_unas_rs
+==========
+
+Copyright (c) 2026 Tanix
+Licensed under the MIT License. See LICENSE for the full license text.
+
+Upstream code
+-------------
+
+The native Rust network and tensor descriptions were extracted from VoiceBox:
+  Commit: d80859feb47a01eb40883c7020e840a6a20a9c1c
+  src/apo/dsp/ul_unas/{network,weights,mod,spectral}.rs
+  src/apo/dsp/simd.rs
+
+Copyright (c) 2026 Tanix
+Licensed under the MIT License reproduced below.
+
+Model
+-----
+
+The UL-UNAS architecture and trained DNS3 parameters originate from:
+  https://github.com/Xiaobin-Rong/ul-unas
+  Commit: 00f7c700da43d38347f30a6ccebd86fcbc798e07
+
+Copyright (c) 2026 Xiaobin Rong
+Licensed under the MIT License reproduced below.
+
+The bundled weights/dns3.f32 contains the unchanged FP32 tensors copied from
+VoiceBox's assets/ul_unas/dns3.f32, derived from the upstream checkpoint
+checkpoints/model_trained_on_dns3.tar (epoch 191).
+These upstream copyright notices and license terms apply to the respective
+components.
+
+Upstream MIT License
+--------------------
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
