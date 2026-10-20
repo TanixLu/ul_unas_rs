@@ -1,10 +1,11 @@
 [package]
 name = "ul_unas_rs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Dependency-free streaming UL-UNAS DNS3 speech denoising"
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/TanixLu/ul_unas_rs"
 keywords = ["audio", "speech", "denoise", "simd"]
 categories = ["multimedia::audio"]
 
