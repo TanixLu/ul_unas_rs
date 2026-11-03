@@ -323,6 +323,16 @@ impl Stage {
         let channels = spatial.outputs;
         let point_size = channels * parameters.input_width;
         let spatial_size = channels * parameters.output_width;
+        let shuffle_size = (if parameters.shuffle_input {
+            point_size
+        } else {
+            0
+        })
+        .max(if parameters.shuffle_output {
+            spatial_size
+        } else {
+            0
+        });
         Self {
             parameters,
             point_input: parameters
@@ -343,7 +353,7 @@ impl Stage {
             ]
             .into_boxed_slice(),
             spatial_values: vec![0.0; spatial_size].into_boxed_slice(),
-            shuffled: vec![0.0; point_size.max(spatial_size)].into_boxed_slice(),
+            shuffled: vec![0.0; shuffle_size].into_boxed_slice(),
         }
     }
 
